@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .card-catatan {
+        padding: 0 1rem 1rem;
+        margin-bottom: 1rem;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Catatan</h1>
+    <form>
+      <div>
+        <label for="judul">Judul</label>
+        <input
+          data-id
+          id="judul"
+          type="text"
+          placeholder="Masukkan judul"
+          required
+        />
+      </div>
+      <div style="margin-top: 1rem">
+        <label style="display: block" for="isi">Isi</label>
+        <textarea
+          id="isi"
+          cols="30"
+          rows="10"
+          placeholder="Masukkan isi"
+          required
+        ></textarea>
+      </div>
+      <button type="submit">Simpan</button>
+    </form>
+
+    <main>
+      <h1>Daftar Catatan</h1>
+      <div id="pembungkus_catatan"></div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
